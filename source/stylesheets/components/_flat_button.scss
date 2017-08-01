@@ -1,0 +1,10 @@
+.btn-flat{
+  background:none;
+  border-width: 2px;
+}
+
+.btn-flat:hover{
+  background:none;
+  border-color: $red;
+  color: $red;
+}

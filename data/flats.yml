@@ -1,7 +1,28 @@
-- title: 'Appartement de Gabriel'
-  picture: 'gabriel.jpg'
-- title: 'Chambre délabré de Flix'
-  picture: 'flix.jpg'
-- title: 'Super loft de Carl'
-  picture: 'carl.jpg'
+jjf21:
+  name: "Carlito's home"
+  description: "Charming room in front of la gravière"
+  city_name: "Hossegor, France"
+  city_slug: "hossegor"
+  picture: 'hossegor.jpg'
+  wifi: false
+  rating: 4
+  details: 'Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc., li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilit? de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.'
+aurelienbigo:
+  name: "John John's home"
+  description: Huge House in Pipeline
+  city_name: "Pipeline, Hawai"
+  city_slug: "pipeline"
+  picture: 'pipeline.jpg'
+  wifi: true
+  rating: 3
+  details: 'Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc., li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilit? de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.'
 
+augustinpoupard:
+  name: Kelly's home
+  description: Nice flat in Santa Barbara
+  city_name: "Santa Barabara, California"
+  city_slug: "santa-barbara"
+  picture: 'santa-barbara.jpg'
+  wifi: true
+  rating: 5
+  details: 'Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc., li tot Europa usa li sam vocabularium. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilit? de un nov lingua franca: on refusa continuar payar custosi traductores. It solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.'

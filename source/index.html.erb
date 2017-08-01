@@ -1,26 +1,40 @@
 ---
 title: Le Wagon - Airbnb
 ---
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://kitt.lewagon.com/placeholder/cities/berlin');">
+<div class="banner" style="background-image: url(<%= image_path 'banner.jpg'%>);">
   <div class="banner-content">
-    <h1>Le Wagon Berlin</h1>
-    <p>Learn to code with us in Berlin</p>
-    <a class="btn btn-primary btn-lg">Start now</a>
+    <h1>Find Your Perfect Surf House</h1>
+    <p>Find perfect location to enjoy perfects waves!</p>
+    <form class="form-inline">
+      <label class="sr-only" for="inlineFormInput">Where ?</label>
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name='where' id="inlineFormInput" placeholder="Where ?">
+
+      <label class="sr-only" for="inlineFormInputGroup">Date</label>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <input type="date" class="form-control" name ='date' id="inlineFormInputGroup" placeholder="When ?">
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-flat">Book now</button>
+    </form>
   </div>
 </div>
-<br><h2 class="text-center"> Lewagon's Lille Appartments </h2><br>
-<div class="container">
+
+<br><div class="container" id="home-flats">
+  <h2 class="text-center">Recent Surf Houses</h2><br>
   <div class="row">
-    <% data.flats.each do |flat| %>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: url(<%= image_path flat.picture %>)">
-        <div class="card-description">
-          <h2><%= flat.title%></h2>
+    <% data.flats.each do |owner, flat| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('<%= image_path flat.picture %>');">
+          <div class="card-category"><%= flat.city_name %></div>
+          <div class="card-description">
+            <h3><%= flat.name %></h3>
+            <p><%= flat.description %></p>
+          </div>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class:"card-user" %>
+          <%= link_to "", "flats/#{owner}.html", class: "card-link" %>
         </div>
       </div>
-    </div>
-
-    <% end%>
+    <% end %>
   </div>
 </div>
 <br><br>
