@@ -7,14 +7,14 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Le Wagon - Airbnb</title>
-    <link href="stylesheets/application-6e1b2b7d.css" rel="stylesheet" />
+    <link href="stylesheets/application-e1d435ca.css" rel="stylesheet" />
     <script src="javascripts/application-93de88c9.js"></script>
     <link href="images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
   <body>
     <div class="navbar-wagon">
   <!-- Logo -->
-<a href="./" class="navbar-wagon-brand">    <img src="images/logo-acc9c0ec.png" alt="Logo" />
+<a href="./" class="navbar-wagon-brand">    <img src="images/logo-ec5b7265.png" alt="Logo" />
 </a>
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
@@ -49,40 +49,60 @@
     </div>
   </div>
 </div>
-    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://kitt.lewagon.com/placeholder/cities/berlin');">
+    <div class="banner" style="background-image: url(images/banner-974b5020.jpg);">
   <div class="banner-content">
-    <h1>Le Wagon Berlin</h1>
-    <p>Learn to code with us in Berlin</p>
-    <a class="btn btn-primary btn-lg">Start now</a>
+    <h1>Find Your Perfect Surf House</h1>
+    <p>Find perfect location to enjoy perfects waves!</p>
+    <form class="form-inline">
+      <label class="sr-only" for="inlineFormInput">Where ?</label>
+      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" name='where' id="inlineFormInput" placeholder="Where ?">
+
+      <label class="sr-only" for="inlineFormInputGroup">Date</label>
+      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+        <input type="date" class="form-control" name ='date' id="inlineFormInputGroup" placeholder="When ?">
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-flat">Book now</button>
+    </form>
   </div>
 </div>
-<br><h2 class="text-center"> Lewagon's Lille Appartments </h2><br>
-<div class="container">
+
+<br><div class="container" id="home-flats">
+  <h2 class="text-center">Recent Surf Houses</h2><br>
   <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: url(images/gabriel-86e23964.jpg)">
-        <div class="card-description">
-          <h2>Appartement de Gabriel</h2>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('images/hossegor-f5565ba7.jpg');">
+          <div class="card-category">Hossegor, France</div>
+          <div class="card-description">
+            <h3>Carlito's home</h3>
+            <p>Charming room in front of la gravière</p>
+          </div>
+          <img src="https://kitt.lewagon.com/placeholder/users/jjf21" class="card-user" alt="Jjf21" />
+          <a href="flats/jjf21.html" class="card-link"></a>
         </div>
       </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: url(images/flix-f7faeffb.jpg)">
-        <div class="card-description">
-          <h2>Chambre délabré de Flix</h2>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('images/pipeline-e9bde447.jpg');">
+          <div class="card-category">Pipeline, Hawai</div>
+          <div class="card-description">
+            <h3>John John's home</h3>
+            <p>Huge House in Pipeline</p>
+          </div>
+          <img src="https://kitt.lewagon.com/placeholder/users/aurelienbigo" class="card-user" alt="Aurelienbigo" />
+          <a href="flats/aurelienbigo.html" class="card-link"></a>
         </div>
       </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: url(images/carl-d1a48f7b.jpg)">
-        <div class="card-description">
-          <h2>Super loft de Carl</h2>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('images/santa-barbara-b98087a9.jpg');">
+          <div class="card-category">Santa Barabara, California</div>
+          <div class="card-description">
+            <h3>Kelly's home</h3>
+            <p>Nice flat in Santa Barbara</p>
+          </div>
+          <img src="https://kitt.lewagon.com/placeholder/users/augustinpoupard" class="card-user" alt="Augustinpoupard" />
+          <a href="flats/augustinpoupard.html" class="card-link"></a>
         </div>
       </div>
-    </div>
-
   </div>
 </div>
 <br><br>
